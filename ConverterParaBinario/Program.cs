@@ -1,5 +1,10 @@
 ﻿Console.WriteLine("Informe o número a ser convertido para binário:");
 int numero = int.Parse(Console.ReadLine());
+if (numero < 0)
+{
+    numero = numero * -1;
+    Console.Write("-");
+}
 
 int[] resposta = converterBinario(numero, new int[8]);
 
