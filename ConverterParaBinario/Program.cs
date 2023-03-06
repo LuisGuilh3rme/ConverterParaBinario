@@ -2,8 +2,7 @@
 int numero = int.Parse(Console.ReadLine());
 if (numero < 0)
 {
-    numero = numero * -1;
-    Console.Write("-");
+    numero *= -1;
 }
 
 int[] resposta = converterBinario(numero, new int[8]);
